@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+</head>
+<body>
+<span>
+    <H2>Set for starting</H2>
+</span>
+<form id="edit-form" th:action="@{/start}" th:method="post" action="start">
+    <h3>Login/Password Info:</h3>
+    <div>
+        <label for="login">Login:</label>
+        <input id="login" type="text" name="login" placeholder="Login" th:value="${emailConfig.login}" value="login"/>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="Password" th:value="${emailConfig.password}" value="password"/>
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="email" placeholder="Email" th:value="${emailConfig.email}" value="email"/>
+    </div>
+    <div>
+        <button type="submit">Start</button>
+    </div>
+</form>
+</body>
+</html>

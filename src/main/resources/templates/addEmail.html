@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>addEmail</title>
+</head>
+<body>
+<h3>Add Email</h3>
+<form id="edit-form" th:action="@{/addEmail}" modelAttribute="mail" th:method="post" action="addEmail">
+    <div>
+        <label for="email">Email:</label>
+        <input id="email" type="text" name="mail" placeholder="Email" value="email"/>
+    </div>
+    <div>
+        <button type="submit">Add</button>
+    </div>
+</form>
+</body>
+</html>

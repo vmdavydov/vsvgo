@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+</head>
+<body>
+<span>
+    <H2>List of RGE</H2>
+</span>
+<form id="edit-form" th:action="@{/addRGE}"  modelAttribute=("RGE","login","password")    th:method="post" action="addRGE">
+    <h3>Inputting RGE/Login/Password Info:</h3>
+    <div>
+        <label for="idRGE">RGE:</label>
+        <input id="idRGE" type="text" name="RGE" placeholder="RGE" value="RGE"/>
+    </div>
+    <div>
+        <label for="login">Login:</label>
+        <input id="login" type="text" name="login" placeholder="Login" value="Login12"/>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="Password" value="password"/>
+    </div>
+    <div>
+        <button type="submit">Add</button>
+    </div>
+</form>
+</body>
+</html>
